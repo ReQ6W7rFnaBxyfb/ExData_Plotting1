@@ -15,9 +15,6 @@ if (!exists("dat")) {
     dat$Date_time <- as.POSIXct(paste(dat$Date,dat$Time), tz=Sys.timezone(), "%d/%m/%Y %H:%M:%S")
 }
 
-## create a column  with POXISct version of the date and time
-data$Date_time <- as.POSIXct(paste(data$Date,data$Time), tz=Sys.timezone(), "%d/%m/%Y %H:%M:%S")
-
 ## create and save four charts for power, voltage, and sub-metering
 png(file="plot4.png", width=480, height=480, bg="white")
 
