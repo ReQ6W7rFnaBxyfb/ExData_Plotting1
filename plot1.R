@@ -1,4 +1,11 @@
-## get and unzip
+## Construct the plot and save it to a PNG file with a width of 480 pixels and a height of 480 pixels.
+## Name each of the plot files as plot1.png, plot2.png, etc.
+## Create a separate R code file that constructs the corresponding plot.
+## Your code file should include code for reading the data so that the plot can be fully reproduced. 
+## You must also include the code that creates the PNG file.
+## Add the PNG file and R code file to the top-level folder of your git repository (no need for separate sub-folders)
+
+## get file and unzip
 fileUrl <- 'http://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip'
 if (!file.exists('..\\household_power_consumption.zip')) {
     download.file(fileUrl, '..\\household_power_consumption.zip', method='wininet')
