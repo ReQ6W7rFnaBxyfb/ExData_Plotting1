@@ -7,4 +7,3 @@ if (!exists("dat")) {
     ## create a column  with POXISct version of the date and time
     dat$Date_time <- as.POSIXct(paste(dat$Date,dat$Time), tz=Sys.timezone(), "%d/%m/%Y %H:%M:%S")
 }
-
